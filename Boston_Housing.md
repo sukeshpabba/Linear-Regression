@@ -332,7 +332,7 @@ Lets evaluate our model using Root Mean Square Error, a standardized measure of 
 
 ``` r
 error <- test$medv-test$predicted.medv
-rmse <- sqrt(mean(error)^2)
+rmse <- sqrt(mean(error^2))
 ```
 
 The Root Mean Square Error (RMSE) for our Model is 0.7602882 and the Results can be further improved using feature extraction and rebuilding,training the model.
